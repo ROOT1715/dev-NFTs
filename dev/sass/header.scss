@@ -1,11 +1,16 @@
 header{
 	padding: 45px 0;
+	
 	.container {
 		display: flex;
 		align-items: center;
 	}
-}
 
+
+ button {
+    white-space: nowrap;
+	}
+}
 .nav-list {
 	display: flex;
 	padding: 0 29px;
@@ -21,7 +26,7 @@ header{
 		font-weight: 500;
 		text-transform: uppercase;
 		color: #606060;
-		&:hower {
+		&:hover {
 			color: #000;
 		}
 	}
@@ -51,4 +56,74 @@ header{
 
 	}
 }
+
+.mobile-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+
+.btn.btn-burger {
+	margin-left: auto;
+	padding: 0;
+	border: none;
+    position: relative;
+	width: 31px;
+	height: 22px;
+	background: transparent;
+	border-radius: 0;
+	display: none;
+	
+	span{ 
+	height: 2px;
+    width: 100%;
+    background: #000;
+    display: block;
+	transition: .3s;
+
+	&:before,
+	&:after{
+		content: "";
+    	position: absolute;
+    	left: 0px;
+    	top: -1px;
+    	width: 100%;
+    	height: 2px;
+    	background-color: #000;
+		transition: .3s;
+		}
+
+	&:after{
+		top: initial;
+		bottom: -1px;
+
+		}
+
+	}
+	&.active{
+		span{ 
+			
+		    background-color: #000;
+		    transform: rotate(45deg);
+
+			&:before,
+			&:after{
+				
+		    	background-color: #000;
+				transform: rotate(-90deg);
+				transition: .4s;
+				}
+			&:after{
+				opacity: 0;
+			
+			}
+		
+	}
+}
+}
+
+
+
+
 
