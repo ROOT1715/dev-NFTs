@@ -1,0 +1,129 @@
+.banner {
+    padding: 66px 0 143px 0;
+    >.container {
+        display: flex;
+    }
+    &-content {
+        max-width: 510px;
+        width: 100%;
+    }
+    &-over-title {
+        font-size: 0;
+        position: relative;
+        width: 195px;
+        display: inline-block;
+        color: #d2d2d2;
+        border-top: 1px solid ;
+    }
+    &-title {
+        font-size: 75px;
+        color: #141416;
+        margin-bottom: 16px;
+    }
+
+    &-description {
+        font-style: 18px;
+        line-height: 28px;
+        color: #676767;
+        margin-bottom: 45px;
+        strong,
+        b{
+          color: #141416;  
+        }
+        
+    }
+
+    &-btns-row {
+        margin: 0 -12px 82px;
+
+        > a,
+        button {
+            margin: 0 12px;
+        }
+    }
+
+    &-advantages {
+        display: flex;
+        margin: 0 -32px;
+
+    }
+
+    &-advantage {
+        margin: 0 32px;
+        h3{
+            font-size: 36px;
+            line-height: 46px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        h6 {
+             font-weight: 500;
+             color: #848586;
+        }
+        
+    }
+    
+    &-slider-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .swiper {
+    width: 391px;
+    height: 394px;
+    margin-bottom: 72px;
+  }
+
+  .swiper-slide{
+    img {
+        width: 100%;
+    }
+  }
+}
+
+.banner-slider-navigation {
+    position: relative;
+    height: 69px;
+    width: 166px;
+    border-radius: 18px;
+    background-color: #FCFCFD;
+    margin-top: 71px;
+    box-shadow: 0px 43px 35px 0px #0F0F0F1F;
+    &::after{
+        content:"";
+        width: 2px;
+        height: 26px;
+        background-color:#E6E8EC;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    height: 26px;
+    width: 26px;
+    top: 23px;
+    margin: 0 22px;
+    color: #929292;
+
+    &:hover {
+        color: #23262F;
+    }
+}
+
+.swiper-button-prev{
+    left: 0;
+   }
+
+.swiper-button-next {
+    right: 0;
+    transform: scaleX(-1);
+
+    
+}
